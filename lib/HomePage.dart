@@ -83,7 +83,10 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(title: Text("Cat vs Dog Detector")),
+        appBar: AppBar(
+          title: Text("Cat vs Dog Detector"),
+          centerTitle: true,
+        ),
         body: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Column(
@@ -127,7 +130,7 @@ class _HomePageState extends State<HomePage> {
                                 height: 20,
                               ),
                               _output != null
-                                  ? Text('${_output![0]}')
+                                  ? Text('${_output![0]['label']}')
                                   : Container()
                             ],
                           ),
