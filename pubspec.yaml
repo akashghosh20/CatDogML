@@ -65,6 +65,9 @@ flutter:
     - assets/catvsdog.png
     - assets/labels.txt
     - assets/model_unquant.tflite
+    - assets/flower.jpg
+    - assets/model_unquantflower.tflite
+    - assets/labelsflower.txt
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -1,3 +1,4 @@
+import 'package:catvsdog/Cat&DogRecog.dart';
 import 'package:catvsdog/HomePage.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Cat vs Dog',
       theme: ThemeData(primarySwatch: Colors.deepPurple),
-      home: HomePage(),
+      home: Homepage(),
       debugShowCheckedModeBanner: false,
     );
   }
