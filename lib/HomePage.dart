@@ -112,6 +112,8 @@ class _HomePageState extends State<HomePage> {
               Center(
                   child: is_loading
                       ? Container(
+                          width: 300,
+                          height: 300,
                           child: Column(children: [
                             Image.asset(
                               "assets/catvsdog.png",
@@ -124,7 +126,9 @@ class _HomePageState extends State<HomePage> {
                           child: Column(
                             children: [
                               Container(
-                                child: Image.file(_image!),
+                                width: 300,
+                                height: 300,
+                                child: ClipRRect(child: Image.file(_image!)),
                               ),
                               SizedBox(
                                 height: 20,
