@@ -68,6 +68,8 @@ flutter:
     - assets/flower.jpg
     - assets/model_unquantflower.tflite
     - assets/labelsflower.txt
+    - assets/fruits_model.tflite
+    - assets/labelsvegetables.txt
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

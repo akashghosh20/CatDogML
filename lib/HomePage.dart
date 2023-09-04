@@ -1,5 +1,6 @@
 import 'package:catvsdog/Cat&DogRecog.dart';
 import 'package:catvsdog/FlowersRecog.dart';
+import 'package:catvsdog/FruitsRecog.dart';
 import 'package:flutter/material.dart';
 
 class Homepage extends StatefulWidget {
@@ -55,6 +56,25 @@ class _HomepageState extends State<Homepage> {
                   leading: Icon(Icons.nature, color: Colors.green),
                   title: Text(
                     "Flower Detection",
+                    style: TextStyle(fontSize: 18),
+                  ),
+                  trailing: Icon(Icons.arrow_forward),
+                ),
+              ),
+              Card(
+                elevation: 5,
+                child: ListTile(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => FruitsRecog(),
+                      ),
+                    );
+                  },
+                  leading: Icon(Icons.free_breakfast, color: Colors.green),
+                  title: Text(
+                    "Fruits and vegetables Detection",
                     style: TextStyle(fontSize: 18),
                   ),
                   trailing: Icon(Icons.arrow_forward),
